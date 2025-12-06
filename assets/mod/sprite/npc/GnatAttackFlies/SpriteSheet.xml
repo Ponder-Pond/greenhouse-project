@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpriteSheet maxComponents="1" paletteGroups="2">
+	<PaletteList>
+		<Palette id="0" name="Default" src="Default.png"/>
+		<Palette id="1" name="Fly" src="Fly.png"/>
+		<Palette id="2" name="SuperFly" src="SuperFly.png"/>
+		<Palette id="3" name="FlyParent" src="FlyParent.png"/>
+		<Palette id="4" name="BombFly" src="BombFly.png"/>
+	</PaletteList>
+	<RasterList>
+		<Raster id="0" name="SmallFlyIdle1" palette="0" src="SmallFlyIdle1.png"/>
+		<Raster id="1" name="SmallFlyIdle2" palette="0" src="SmallFlyIdle2.png"/>
+		<Raster id="2" name="SmallFlyIdle3" palette="0" src="SmallFlyIdle3.png"/>
+		<Raster id="3" name="SmallFlyIdle4" palette="0" src="SmallFlyIdle4.png"/>
+		<Raster id="4" name="SmallFlyGroupIdle1" palette="0" src="SmallFlyGroupIdle1.png"/>
+		<Raster id="5" name="SmallFlyGroupIdle2" palette="0" src="SmallFlyGroupIdle2.png"/>
+		<Raster id="6" name="SmallFlyGroupIdle3" palette="0" src="SmallFlyGroupIdle3.png"/>
+		<Raster id="7" name="SmallFlyGroupIdle4" palette="0" src="SmallFlyGroupIdle4.png"/>
+		<Raster id="8" name="FlyIdle1" palette="1" src="FlyIdle1.png"/>
+		<Raster id="9" name="FlyIdle2" palette="1" src="FlyIdle2.png"/>
+		<Raster id="A" name="FlyIdle3" palette="1" src="FlyIdle3.png"/>
+		<Raster id="B" name="FlyIdle4" palette="1" src="FlyIdle4.png"/>
+		<Raster id="C" name="SuperFlyIdle1" palette="2" src="SuperFlyIdle1.png"/>
+		<Raster id="D" name="SuperFlyIdle2" palette="2" src="SuperFlyIdle2.png"/>
+		<Raster id="E" name="SuperFlyIdle3" palette="2" src="SuperFlyIdle3.png"/>
+		<Raster id="F" name="SuperFlyIdle4" palette="2" src="SuperFlyIdle4.png"/>
+		<Raster id="10" name="SuperFlyAttack1" palette="2" src="SuperFlyAttack1.png"/>
+		<Raster id="11" name="SuperFlyAttack2" palette="2" src="SuperFlyAttack2.png"/>
+		<Raster id="12" name="SuperFlyAttack3" palette="2" src="SuperFlyAttack3.png"/>
+		<Raster id="13" name="SuperFlyAttack4" palette="2" src="SuperFlyAttack4.png"/>
+		<Raster id="14" name="FlyParentIdle1" palette="3" src="FlyParentIdle1.png"/>
+		<Raster id="15" name="FlyParentIdle2" palette="3" src="FlyParentIdle2.png"/>
+		<Raster id="16" name="FlyParentIdle3" palette="3" src="FlyParentIdle3.png"/>
+		<Raster id="17" name="FlyParentIdle4" palette="3" src="FlyParentIdle4.png"/>
+		<Raster id="18" name="FlyParentAttack1" palette="3" src="FlyParentAttack1.png"/>
+		<Raster id="19" name="FlyParentAttack2" palette="3" src="FlyParentAttack2.png"/>
+		<Raster id="1A" name="FlyParentAttack3" palette="3" src="FlyParentAttack3.png"/>
+		<Raster id="1B" name="FlyParentAttack4" palette="3" src="FlyParentAttack4.png"/>
+		<Raster id="1C" name="BombFlyIdle1" palette="4" src="BombFlyIdle1.png"/>
+		<Raster id="1D" name="BombFlyIdle2" palette="4" src="BombFlyIdle2.png"/>
+		<Raster id="1E" name="BombFlyIdle3" palette="4" src="BombFlyIdle3.png"/>
+		<Raster id="1F" name="BombFlyIdle4" palette="4" src="BombFlyIdle4.png"/>
+		<Raster id="20" name="BombFlyAttack1" palette="4" src="BombFlyAttack1.png"/>
+		<Raster id="21" name="BombFlyAttack2" palette="4" src="BombFlyAttack2.png"/>
+		<Raster id="22" name="BombFlyAttack3" palette="4" src="BombFlyAttack3.png"/>
+		<Raster id="23" name="BombFlyAttack4" palette="4" src="BombFlyAttack4.png"/>
+	</RasterList>
+	<AnimationList>
+		<Animation name="IdleSmallFly">
+			<Component name="Body" xyz="0,15,0">
+				<Label name="Start"/>
+				<SetRaster index="0"/>
+				<Wait duration="2"/>
+				<SetRaster index="1"/>
+				<Wait duration="2"/>
+				<SetRaster index="2"/>
+				<Wait duration="2"/>
+				<SetRaster index="3"/>
+				<Wait duration="2"/>
+				<Goto dest="Start"/>
+			</Component>
+		</Animation>
+		<Animation name="IdleSmallFlyGroup">
+			<Component name="Body" xyz="0,0,0">
+				<Label name="Start"/>
+				<SetRaster index="4"/>
+				<Wait duration="2"/>
+				<SetRaster index="5"/>
+				<Wait duration="2"/>
+				<SetRaster index="6"/>
+				<Wait duration="2"/>
+				<SetRaster index="7"/>
+				<Wait duration="2"/>
+				<Goto dest="Start"/>
+			</Component>
+		</Animation>
+		<Animation name="IdleFly">
+			<Component name="Body" xyz="0,6,0">
+				<Label name="Start"/>
+				<SetRaster index="8"/>
+				<Wait duration="4"/>
+				<SetRaster index="9"/>
+				<Wait duration="2"/>
+				<SetRaster index="A"/>
+				<Wait duration="4"/>
+				<SetRaster index="B"/>
+				<Wait duration="2"/>
+				<Goto dest="Start"/>
+			</Component>
+		</Animation>
+		<Animation name="IdleSuperFly">
+			<Component name="Body" xyz="1,0,0">
+				<Label name="Start"/>
+				<SetRaster index="C"/>
+				<Wait duration="4"/>
+				<SetRaster index="D"/>
+				<Wait duration="2"/>
+				<SetRaster index="E"/>
+				<Wait duration="4"/>
+				<SetRaster index="F"/>
+				<Wait duration="2"/>
+				<Goto dest="Start"/>
+			</Component>
+		</Animation>
+		<Animation name="AttackSuperFly">
+			<Component name="Body" xyz="1,-1,0">
+				<Label name="Start"/>
+				<SetRaster index="10"/>
+				<SetPos flag="0" xyz="0,1,0"/>
+				<Wait duration="4"/>
+				<SetRaster index="11"/>
+				<SetScale mode="uniform" percent="105"/>
+				<Wait duration="2"/>
+				<SetRaster index="12"/>
+				<SetPos flag="0" xyz="0,-2,0"/>
+				<SetScale mode="uniform" percent="110"/>
+				<Wait duration="4"/>
+				<SetRaster index="13"/>
+				<SetScale mode="uniform" percent="105"/>
+				<Wait duration="2"/>
+				<Goto dest="Start"/>
+			</Component>
+		</Animation>
+		<Animation name="IdleFlyParent">
+			<Component name="Body" xyz="0,0,0">
+				<Label name="Start"/>
+				<SetRaster index="14"/>
+				<Wait duration="4"/>
+				<SetRaster index="15"/>
+				<Wait duration="2"/>
+				<SetRaster index="16"/>
+				<Wait duration="4"/>
+				<SetRaster index="17"/>
+				<Wait duration="2"/>
+				<Goto dest="Start"/>
+			</Component>
+		</Animation>
+		<Animation name="AttackFlyParent">
+			<Component name="Body" xyz="0,-2,0">
+				<Label name="Start"/>
+				<SetRaster index="18"/>
+				<SetPos flag="0" xyz="0,2,0"/>
+				<Wait duration="4"/>
+				<SetRaster index="19"/>
+				<SetScale mode="uniform" percent="105"/>
+				<Wait duration="2"/>
+				<SetRaster index="1A"/>
+				<SetScale mode="uniform" percent="110"/>
+				<SetPos flag="0" xyz="0,-3,0"/>
+				<Wait duration="4"/>
+				<SetRaster index="1B"/>
+				<SetScale mode="uniform" percent="105"/>
+				<Wait duration="2"/>
+				<Goto dest="Start"/>
+			</Component>
+		</Animation>
+		<Animation name="IdleBombFly">
+			<Component name="Body" xyz="0,0,0">
+				<Label name="Start"/>
+				<SetRaster index="1C"/>
+				<Wait duration="4"/>
+				<SetRaster index="1D"/>
+				<Wait duration="2"/>
+				<SetRaster index="1E"/>
+				<Wait duration="4"/>
+				<SetRaster index="1F"/>
+				<Wait duration="2"/>
+				<Goto dest="Start"/>
+			</Component>
+		</Animation>
+		<Animation name="AttackBombFly">
+			<Component name="Body" xyz="0,-1,0">
+				<Label name="Start"/>
+				<SetRaster index="20"/>
+				<SetPos flag="0" xyz="0,2,0"/>
+				<Wait duration="4"/>
+				<SetRaster index="21"/>
+				<SetScale mode="uniform" percent="105"/>
+				<Wait duration="2"/>
+				<SetRaster index="22"/>
+				<SetPos flag="0" xyz="0,-1,0"/>
+				<SetScale mode="uniform" percent="110"/>
+				<Wait duration="4"/>
+				<SetRaster index="23"/>
+				<SetScale mode="uniform" percent="105"/>
+				<Wait duration="2"/>
+				<Goto dest="Start"/>
+			</Component>
+		</Animation>
+	</AnimationList>
+</SpriteSheet>

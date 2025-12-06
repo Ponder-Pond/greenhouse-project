@@ -10,7 +10,7 @@ NpcSettings N(NpcSettings_Dummy) = {
     .level = ACTOR_LEVEL_NONE,
 };
 
-#include "npc/lava_piranha.inc.c"
+// #include "npc/lava_piranha.inc.c"
 
 #include "npc/chapter_1.inc.c"
 #include "npc/chapter_2.inc.c"
@@ -376,39 +376,39 @@ NpcData N(NpcData_Chapter5)[] = {
         .drops = NO_DROPS,
         .animations = MISSTAR_ANIMS,
     },
-    {
-        .id = NPC_LavaPiranhaHead,
-        .pos = { 0.0f, 0.0f, 0.0f },
-        .yaw = 270,
-        .init = &N(EVS_NpcInit_LavaPiranhaHead),
-        .settings = &N(NpcSettings_Dummy),
-        .flags = ENEMY_FLAG_DO_NOT_KILL,
-        .drops = NO_DROPS,
-        .animations = LAVA_PIRANHA_HEAD_ANIMS,
-        .extraAnimations = N(D_80243848_902EB8),
-    },
-    {
-        .id = NPC_LavaBud_01,
-        .pos = { 0.0f, 0.0f, 0.0f },
-        .yaw = 270,
-        .init = &N(EVS_NpcInit_LavaBud_01),
-        .settings = &N(NpcSettings_Dummy),
-        .flags = ENEMY_FLAG_PASSIVE | ENEMY_FLAG_DO_NOT_KILL,
-        .drops = NO_DROPS,
-        .animations = LAVA_PIRANHA_BUD_ANIMS,
-        .extraAnimations = N(D_80243854_902EC4),
-    },
-    {
-        .id = NPC_LavaBud_02,
-        .pos = { 0.0f, 0.0f, 0.0f },
-        .yaw = 270,
-        .init = &N(EVS_NpcInit_LavaBud_01),
-        .settings = &N(NpcSettings_Dummy),
-        .flags = ENEMY_FLAG_PASSIVE | ENEMY_FLAG_DO_NOT_KILL,
-        .drops = NO_DROPS,
-        .animations = LAVA_PIRANHA_BUD_ANIMS,
-        .extraAnimations = N(D_80243854_902EC4),
-    },
+    // {
+    //     .id = NPC_LavaPiranhaHead,
+    //     .pos = { 0.0f, 0.0f, 0.0f },
+    //     .yaw = 270,
+    //     .init = &N(EVS_NpcInit_LavaPiranhaHead),
+    //     .settings = &N(NpcSettings_Dummy),
+    //     .flags = ENEMY_FLAG_DO_NOT_KILL,
+    //     .drops = NO_DROPS,
+    //     .animations = LAVA_PIRANHA_HEAD_ANIMS,
+    //     .extraAnimations = N(D_80243848_902EB8),
+    // },
+    // {
+    //     .id = NPC_LavaBud_01,
+    //     .pos = { 0.0f, 0.0f, 0.0f },
+    //     .yaw = 270,
+    //     .init = &N(EVS_NpcInit_LavaBud_01),
+    //     .settings = &N(NpcSettings_Dummy),
+    //     .flags = ENEMY_FLAG_PASSIVE | ENEMY_FLAG_DO_NOT_KILL,
+    //     .drops = NO_DROPS,
+    //     .animations = LAVA_PIRANHA_BUD_ANIMS,
+    //     .extraAnimations = N(D_80243854_902EC4),
+    // },
+    // {
+    //     .id = NPC_LavaBud_02,
+    //     .pos = { 0.0f, 0.0f, 0.0f },
+    //     .yaw = 270,
+    //     .init = &N(EVS_NpcInit_LavaBud_01),
+    //     .settings = &N(NpcSettings_Dummy),
+    //     .flags = ENEMY_FLAG_PASSIVE | ENEMY_FLAG_DO_NOT_KILL,
+    //     .drops = NO_DROPS,
+    //     .animations = LAVA_PIRANHA_BUD_ANIMS,
+    //     .extraAnimations = N(D_80243854_902EC4),
+    // },
 };
 
 NpcData N(NpcData_Chapter6)[] = {

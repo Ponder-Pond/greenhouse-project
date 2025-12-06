@@ -1,0 +1,30 @@
+[
+    {
+        "name": "stamp1",
+        "main": {
+            "format": "CI4",
+            "hwrap": "Repeat",
+            "vwrap": "Repeat"
+        },
+        "combine": "Multiply"
+    },
+    {
+        "name": "stamp2",
+        "main": {
+            "format": "CI4",
+            "hwrap": "Repeat",
+            "vwrap": "Repeat"
+        },
+        "combine": "Multiply"
+    },
+    {
+        "name": "swatter",
+        "main": {
+            "format": "CI4",
+            "hwrap": "Repeat",
+            "vwrap": "Repeat"
+        },
+        "filter": true,
+        "combine": "Multiply"
+    }
+]
